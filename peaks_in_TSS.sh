@@ -1,6 +1,10 @@
 #! /bin/bash
 
-printf "This script finds peaks within n bases of the TSS. Its input is a Homer-annotated region file (e.g. a BED file processed using Homer annotatePeaks). \n"
+printf "This script finds peaks within n bases of the TSS. Its input is a Homer-annotated region file 
+(specifically, a BED file processed using Homer annotatePeaks) and your desired value for n.
+
+It generates two files per value of n: a filtered version of the annotated region file containing
+only the peaks within n bases of a TSS, and a file containing genes with peaks and the "
 
 read -p "Enter the path to your annotated peak file: " -r PEAK_DIR
 
