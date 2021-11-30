@@ -52,5 +52,6 @@ rm ./final_peaks/4.motif_intersect/cat.flat.motif_wa.unsorted.bed
 printf 'Step 4 of 4: Annotating peaks... \n\n'
 
 annotatePeaks.pl ./final_peaks/4.motif_intersect/cat.flat.motif_wa.bed  $SPECIES -annStats ./final_peaks/5.stats/cat.flat.motif_wa.anno_stats.tsv > ./final_peaks/5.stats/cat.flat.motif_wa.anno.tsv
+annotatePeaks.pl ./final_peaks/3.flat/cat.flat.bed  $SPECIES -annStats ./final_peaks/5.stats/cat.flat.anno_stats.tsv > ./final_peaks/5.stats/cat.flat.anno.tsv
 
 printf 'Done, enjoy your day :) \n\n'
